@@ -30,7 +30,7 @@
           services = {
             websites = {
               sites = {
-                moomin-orb = {
+                dino-game = {
                   enable = lib.mkEnableOption "Play Dino Game Deluxe! (static website)";
                   domain = lib.mkOption {
                     type = lib.types.str;
