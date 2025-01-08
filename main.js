@@ -12,16 +12,16 @@ function spawn() {
   };
 
   const spawnables = [
-    { src: "minis/strawberry-fruit-015.gif", id: "strawb" },
-    { src: "minis/cherry-fruit-007.gif", id: "cherry" },
-    { src: "minis/monitor-screen-0002.gif", id: "compy" },
-    { src: "minis/drink-alcohol-0589.gif", id: "bev" },
-    { src: "minis/musical-instrument-0052.gif", id: "drum" },
-    { src: "minis/jar-green-glass.gif", id: "potion" },
-    { src: "minis/musical-instrument-0028.gif", id: "piano" },
-    { src: "minis/burger-food-0591.gif", id: "burgy" },
-    { src: "minis/food-pudding-0930.gif", id: "flan" },
-    { src: "minis/tiger-0077.gif", id: "tiger" },
+    { src: "imgs/strawberry-fruit-015.gif", id: "strawb" },
+    { src: "imgs/cherry-fruit-007.gif", id: "cherry" },
+    { src: "imgs/monitor-screen-0002.gif", id: "compy" },
+    { src: "imgs/drink-alcohol-0589.gif", id: "bev" },
+    { src: "imgs/musical-instrument-0052.gif", id: "drum" },
+    { src: "imgs/jar-green-glass.gif", id: "potion" },
+    { src: "imgs/musical-instrument-0028.gif", id: "piano" },
+    { src: "imgs/burger-food-0591.gif", id: "burgy" },
+    { src: "imgs/food-pudding-0930.gif", id: "flan" },
+    { src: "imgs/tiger-0077.gif", id: "tiger" },
   ];
 
   chosenToSpawn = pickRandom(spawnables);

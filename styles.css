@@ -5,7 +5,7 @@
 }
 body {
   text-align: center;
-  background: black url("stars3.gif");
+  background: black url("imgs/stars3.gif");
   image-rendering: pixelated;
 }
 #text {
@@ -26,7 +26,7 @@ body {
   border-radius: 9px;
 }
 #world {
-  background: url("SAND3.JPG");
+  background: url("imgs/SAND3.JPG");
   width: 512px;
   height: 512px;
   position: relative;
