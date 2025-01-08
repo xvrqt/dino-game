@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Dino Game - DELUXE</title>
+
+    <meta name="viewport" content="width=device.width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1A4F65" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body
+    onload="
+    player = document.getElementById('player');
+    world = document.getElementById('world');
+    text = document.getElementById('text');
+    inventory = document.getElementById('inventory');
+    walkGif = 'minis/dinosaur-0041.gif';
+    standGif = 'minis/dinosaur-0806.gif';
+    goTimeout = false;
+    scale = 1;
+    "
+  >
+    <script src="main.js"></script>
+    <div id="world">
+      <img
+        src="imgs/dinosaur-0806.gif"
+        id="player"
+        style="top: 50%; left: 50%"
+        draggable="false"
+      />
+      <img
+        src="imgs/strawberry-fruit-015.gif"
+        id="strawb"
+        style="top: 45%; left: 15%"
+        onclick="goTo(document.getElementById('player'),this);"
+        draggable="false"
+      />
+      <img
+        src="imgs/drink-alcohol-0589.gif"
+        id="bev"
+        style="top: 15%; left: 15%"
+        onclick="goTo(document.getElementById('player'),this);"
+        draggable="false"
+      />
+      <img
+        src="imgs/musical-instrument-0052.gif"
+        id="drum"
+        style="top: 75%; left: 75%"
+        onclick="goTo(document.getElementById('player'),this);"
+        draggable="false"
+      />
+      <img
+        src="imgs/cherry-fruit-007.gif"
+        id="cherry"
+        style="top: 15%; left: 75%"
+        onclick="goTo(document.getElementById('player'),this);"
+        draggable="false"
+      />
+      <img
+        src="imgs/fire-18.gif"
+        id="fire"
+        style="top: 55%; left: 37%"
+        onclick="goTo(document.getElementById('player'),this);"
+        draggable="false"
+      />
+      <img
+        src="imgs/aquarium-fish-bowl-0006.gif"
+        id="water"
+        style="top: 85%; left: 37%"
+        onclick="goTo(document.getElementById('player'),this);"
+        draggable="false"
+      />
+      <div id="text"></div>
+      <div id="inventory"></div>
+      <img
+        draggable="false"
+        src="imgs/cherry-fruit-007.gif"
+        id="cherry"
+        style="top: 10.504%; left: 54.5409%"
+      /><img
+        draggable="false"
+        src="imgs/musical-instrument-0052.gif"
+        id="drum"
+        style="top: 16.8054%; left: 73.0847%"
+      /><img
+        draggable="false"
+        src="imgs/tiger-0077.gif"
+        id="tiger"
+        style="top: 29.6826%; left: 82.3989%"
+      />
+    </div>
+  </body>
+</html>

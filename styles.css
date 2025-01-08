@@ -1,0 +1,122 @@
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+body {
+  text-align: center;
+  background: black url("stars3.gif");
+  image-rendering: pixelated;
+}
+#text {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0px 0px 9px blue;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  z-index: 2;
+}
+#inventory {
+  position: absolute;
+  bottom: -64px;
+  left: 0;
+  background: blue;
+  padding: 10px;
+  border-radius: 9px;
+}
+#world {
+  background: url("SAND3.JPG");
+  width: 512px;
+  height: 512px;
+  position: relative;
+  margin: auto;
+  box-shadow:
+    0 0 30px blue,
+    inset 0 0 352px 74px black;
+  border-radius: 300px;
+  animation: glow 6s;
+  animation-iteration-count: infinite;
+}
+#world img {
+  position: absolute;
+}
+.drunk {
+  filter: drop-shadow(0 0 5px red);
+  animation: spin 2s;
+  animation-timing-function: linear;
+}
+#player {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition:
+    top 3s linear,
+    left 3s linear;
+  pointer-events: none;
+  z-index: 2;
+}
+.flipped {
+  /*transform:scaleX(-1);*/
+}
+img:hover {
+  /*
+        animation: shake 2s;
+        animation-iteration-count: infinite;
+        */
+  cursor: pointer;
+}
+
+#world.shaking {
+  animation: shake 0.3s;
+  animation-iteration-count: infinite;
+}
+
+.color-red {
+  filter: brightness(0.6) sepia(1) hue-rotate(286deg) contrast(1.5);
+}
+
+.color-green {
+  filter: brightness(0.6) sepia(1) hue-rotate(33deg) contrast(1.8);
+}
+
+.burnt {
+  filter: brightness(0);
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+  90% {
+    transform: scale(1);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glow {
+  0% {
+    box-shadow:
+      0 0 80px blue,
+      inset 0 0 352px 74px black;
+  }
+  50% {
+    box-shadow:
+      0 0 30px blue,
+      inset 0 0 352px 74px black;
+  }
+  100% {
+    box-shadow:
+      0 0 80px blue,
+      inset 0 0 352px 74px black;
+  }
+}
